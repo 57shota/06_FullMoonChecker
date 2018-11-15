@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_6_FullMoonChecker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newMoon" translatesAutoresizingMaskIntoConstraints="NO" id="pmY-bZ-DNT">
+                                <rect key="frame" x="112" y="86" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="9uj-WB-88o"/>
+                                    <constraint firstAttribute="width" constant="150" id="GDU-jn-UPh"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="14" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ndN-gD-Mtb">
+                                <rect key="frame" x="142" y="498" width="91" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="days left" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TMQ-QT-Y6q">
+                                <rect key="frame" x="142" y="575" width="91" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Moon" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZMg-sf-UIs">
+                                <rect key="frame" x="118" y="315.5" width="139.5" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.10041829593636173" green="0.10077696637481999" blue="0.22714944948186533" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="pmY-bZ-DNT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="66" id="0rC-Bv-aU4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TMQ-QT-Y6q" secondAttribute="trailing" constant="142" id="5FR-6N-Pp8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="TMQ-QT-Y6q" secondAttribute="bottom" constant="68" id="5df-Kj-zWM"/>
+                            <constraint firstItem="ZMg-sf-UIs" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="BnW-cY-PVb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ndN-gD-Mtb" secondAttribute="trailing" constant="142" id="MKa-QT-SHy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pmY-bZ-DNT" secondAttribute="trailing" constant="113" id="OME-G3-PIj"/>
+                            <constraint firstItem="TMQ-QT-Y6q" firstAttribute="top" secondItem="ndN-gD-Mtb" secondAttribute="bottom" constant="17" id="RMh-eS-ZTH"/>
+                            <constraint firstItem="ZMg-sf-UIs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YrH-90-zd3"/>
+                            <constraint firstItem="ndN-gD-Mtb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="142" id="kFa-Gv-vWA"/>
+                            <constraint firstItem="TMQ-QT-Y6q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="142" id="mQo-Vf-00c"/>
+                            <constraint firstItem="ZMg-sf-UIs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qlR-bU-YTg"/>
+                            <constraint firstItem="ZMg-sf-UIs" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="qvI-1L-iUb"/>
+                            <constraint firstItem="pmY-bZ-DNT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="112" id="uzB-UA-BNF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="Days" destination="ndN-gD-Mtb" id="01t-qg-0H1"/>
+                        <outlet property="MoonPhase" destination="ZMg-sf-UIs" id="NQn-AU-i6f"/>
+                        <outlet property="MoonView" destination="pmY-bZ-DNT" id="glH-P6-6o5"/>
+                        <outlet property="daysLeft" destination="TMQ-QT-Y6q" id="J6m-LL-fHd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="newMoon" width="525" height="525"/>
+    </resources>
+</document>
